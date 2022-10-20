@@ -1,0 +1,53 @@
+main {
+  @include clearfix();
+  position: relative;
+  background-color: #061a3f;
+  section {
+    max-width: 100%;
+    height: 877px;
+    .bg {
+      width: 100%;
+      height: 100%;
+      background: url(../images/kv-fight_escape.jpg) no-repeat center;
+      background-size: cover;
+      .img {
+        width: 100%;
+        height: 100%;
+        background: url(../images/kv-fight_escape.png) no-repeat center;
+      }
+      .text {
+        position: absolute;
+        top: 33%;
+        left: 20%;
+        padding-top: 90px;
+        color: #fff;
+        text-transform: none;
+        font-family: "Oswald", sans-serif;
+        h2 {
+          font-size: 70px;
+          font-weight: 400;
+          line-height: 1.2;
+          span {
+            position: relative;
+            top: -1rem;
+            left: -3%;
+          }
+        }
+      }
+    }
+  }
+  @include clearfix();
+  @include mq("small-screen-1") {
+    width: 100%;
+  }
+  @include mq("small-screen-2") {
+    width: 100%;
+    height: 54rem;
+    padding: 7rem 6rem 6.5rem 6rem;
+  }
+  @include mq("small-screen-3") {
+    width: 100%;
+    height: 60rem;
+    padding: 7rem 6rem 6.5rem 6rem;
+  }
+}

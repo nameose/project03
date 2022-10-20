@@ -1,0 +1,106 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: $color-grey-light;
+  background-color: $color-grey-dark;
+  padding: 10px 30px;
+  @include mq("small-screen-3") {
+    padding: 9rem 2rem 3rem 7rem;
+  }
+  .footer_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .footer_link {
+      width: 33%;
+      ul {
+        position: relative;
+        li {
+          display: flex;
+          a {
+            display: block;
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+            border-radius: 50%;
+            background-color: rgba($color-dark, 0.2);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+          }
+          .twitter {
+            background-image: url(../images/twitter.png);
+            &:hover {
+              background-image: url(../images/twitter_h.png);
+            }
+          }
+          .facebook {
+            background-image: url(../images/facebook.png);
+            &:hover {
+              background-image: url(../images/facebook_h.png);
+            }
+          }
+          .youtube {
+            background-image: url(../images/youtube.png);
+            &:hover {
+              background-image: url(../images/youtube_h.png);
+            }
+          }
+          .naver_post {
+            background-image: url(../images/naver_post.png);
+            &:hover {
+              background-image: url(../images/naver_post_h.png);
+            }
+          }
+        }
+      }
+    }
+    .footer_logo {
+      position: relative;
+      width: 33%;
+      text-align: center;
+      line-height: 40px;
+      font-size: 15px;
+      select {
+        position: relative;
+        background: transparent;
+        border: 0px solid;
+        border-bottom: 1px solid $color-grey-light;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 800;
+        color: #929191;
+        width: 60%;
+        margin: auto;
+        padding: 10px;
+        cursor: pointer;
+        &:hover {
+          color: $color-grey-light;
+        }
+      }
+      @include mq("small-screen-3") {
+        margin-right: 6rem;
+        width: 20%;
+      }
+    }
+    .copyright {
+      width: 33%;
+      text-align: right;
+      @include mq("small-screen-3") {
+        width: 60%;
+      }
+      p {
+        font-size: 11px;
+        font-weight: 700;
+        display: inline-block;
+        &:first-child {
+          padding-right: 8px;
+          margin-right: 8px;
+          margin-bottom: 8px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

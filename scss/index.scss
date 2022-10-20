@@ -1,0 +1,14 @@
+//abstracts
+@import "abstracts/veriables";
+@import "abstracts/mixins";
+
+//base
+@import "base/base";
+
+//components
+@import "components/nav";
+
+//layout
+@import "layout/header";
+@import "layout/main";
+@import "layout/footer";
