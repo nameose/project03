@@ -177,6 +177,9 @@ li {
 #header .language-select select:hover {
   color: #fff;
 }
+#header .language-select select option {
+  color: #6b6b6b;
+}
 
 main {
   position: relative;
@@ -330,6 +333,9 @@ footer .footer_wrap .footer_logo select {
   cursor: pointer;
 }
 footer .footer_wrap .footer_logo select:hover {
+  color: #6b6b6b;
+}
+footer .footer_wrap .footer_logo select option {
   color: #6b6b6b;
 }
 @media screen and (max-width: 700px) {

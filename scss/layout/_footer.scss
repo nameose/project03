@@ -78,6 +78,9 @@ footer {
         &:hover {
           color: $color-grey-light;
         }
+        option{
+          color:#6b6b6b;
+        }
       }
       @include mq("small-screen-3") {
         margin-right: 6rem;
