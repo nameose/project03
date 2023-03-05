@@ -43,11 +43,9 @@ main {
   @include mq("small-screen-2") {
     width: 100%;
     height: 54rem;
-    padding: 7rem 6rem 6.5rem 6rem;
   }
   @include mq("small-screen-3") {
     width: 100%;
-    height: 60rem;
-    padding: 7rem 6rem 6.5rem 6rem;
+    height: 54rem;
   }
 }
