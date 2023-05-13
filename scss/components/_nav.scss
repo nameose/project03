@@ -14,7 +14,6 @@
     left: 1rem;
   }
   &-bg {
-    background-color: rgba($color-dark,0.7);
     width: 7rem;
     height: 6rem;
     position: fixed;
@@ -25,6 +24,7 @@
   }
   &-checkbox:checked ~ &-bg {
     transform: scale(80);
+    background-color: rgba($color-dark,0.7);
   }
   &-icon {
     position: relative;

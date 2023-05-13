@@ -41,7 +41,6 @@ li {
   left: 1rem;
 }
 .nav-bg {
-  background-color: rgba(0, 0, 0, 0.7);
   width: 7rem;
   height: 6rem;
   position: fixed;
@@ -52,6 +51,7 @@ li {
 }
 .nav-checkbox:checked ~ .nav-bg {
   transform: scale(80);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .nav-icon {
   position: relative;
